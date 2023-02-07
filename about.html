@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>About Me</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet">
+    <style>
+      body {
+        text-align: center;
+        font-family: sans-serif;
+        background-color: #f2f2f2;
+        background-image: url(https://wallpaperaccess.com/full/2379729.jpg);
+        background-size: cover;
+}
+.typing-animation {
+  animation: typing 3s steps(40, end);
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@keyframes typing {
+  from { 
+    width: 0; 
+  }
+  to { 
+    width: 100%; 
+  }
+}
+
+      .toolbar {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 60px;
+        background-color: #333;
+        color: white;
+        padding: 0 20px;
+        animation: slide-in-from-right 1s ease-out;
+      }
+
+      @keyframes slide-in-from-right {
+        from {
+          transform: translateX(100%);
+        }
+        to {
+          transform: translateX(0%);
+        }
+      }
+      
+      .toolbar a {
+        color: white;
+        text-decoration: none;
+        margin-right: 20px;
+        font-size: 24px;
+      }
+      .toolbar a i {
+        margin-right: 10px;
+      }
+      
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      
+      .column {
+        width: 500px;
+        text-align: left;
+        padding: 20px;
+        background-color: #333;
+        color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="toolbar">
+        <a href="index.html"><i class="fas fa-home"></i>Home</a>
+      <a href="#"><i class="fas fa-info-circle"></i>About</a>
+      <a href="#"><i class="fas fa-envelope"></i>Contact</a>
+    </div>
+    <div class="container">
+      <div class="column">
+        <h1>About Me</h1>
+        <p class="typing-animation">Hello! My name is [Your Name] and I am a [Your profession/interest].</p>
+      </div>
+    </div>
+  </body>
+</html>
