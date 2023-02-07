@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Get to Know Me</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet">
+    <style>
+      body {
+        text-align: center;
+        font-family: sans-serif;
+        background-image: url(https://wallpaperaccess.com/full/897066.jpg);
+        background-size: cover;
+        animation: fadeIn 1s ease-out;
+      }
+      .toolbar {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 60px;
+        background-color: #333;
+        color: white;
+        padding: 0 20px;
+        animation: slide-in 1s ease-out;
+      }
+      .toolbar a {
+        color: white;
+        text-decoration: none;
+        margin-right: 20px;
+        font-size: 24px;
+      }
+      .toolbar a i {
+        margin-right: 10px;
+      }
+      @keyframes slide-in {
+        0% {
+          transform: translateX(-100%);
+        }
+        100% {
+          transform: translateX(0%);
+        }
+      }
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="toolbar">
+      <a href="#"><i class="fas fa-home"></i>Home</a>
+      <a href="#"><i class="fas fa-info-circle"></i>About</a>
+      <a href="#"><i class="fas fa-envelope"></i>Contact</a>
+    </div>
+    <h1>Welcome to my website!</h1>
+    <p>Here, you'll get to know me better and see my interests and projects.</p>
+  </body>
+</html>
